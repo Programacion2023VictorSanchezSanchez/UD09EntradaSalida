@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class NumerosNaturales {
 
-    private ArrayList<Integer> listaNum;
+    public ArrayList<Integer> listaNum;
     public static final String FICHERO = "numNaturales.txt";
 
     // Constructor
