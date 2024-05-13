@@ -3,7 +3,7 @@ package T09Tarea2;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 
-public class Contacto {
+public class Contacto implements Comparable<Contacto>{
     //tamaño fijo de los campos
     final static int LONGITUD_NOMBRE = 20;
     final static int LONGITUD_DIRECCION = 30;
@@ -111,6 +111,10 @@ public class Contacto {
             return leerContacto(raf);
         }else throw new IOException("Posicion fuera de rango");
 
+    }
+    @Override
+    public int compareTo(Contacto otroContacto) {
+        return this.nombre.compareTo(otroContacto.getNombre());
     }
 }
 

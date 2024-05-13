@@ -9,8 +9,5 @@
         <module name="UD09EntradaSalida" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="UD09EntradaSalida" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
